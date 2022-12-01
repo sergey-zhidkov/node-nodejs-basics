@@ -16,7 +16,7 @@ const rename = async () => {
         throw new Error("FS operation failed");
     }
 
-    fsPromises.rename(path.join(dirPath, fileToRename), path.join(dirPath, newName));
+    await fsPromises.rename(path.join(dirPath, fileToRename), path.join(dirPath, newName));
 };
 
 const isFileExists = async (path) => {
