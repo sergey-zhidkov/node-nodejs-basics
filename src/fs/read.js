@@ -1,5 +1,4 @@
 import { promises as fsPromises } from "fs";
-import path from "path";
 
 const read = async () => {
     const fileToReadPath = "./files/fileToRead.txt";
