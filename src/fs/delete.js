@@ -10,7 +10,7 @@ const remove = async () => {
         throw new Error("FS operation failed");
     }
 
-    await fsPromises.remove(fileToRemovePath);
+    await fsPromises.unlink(fileToRemovePath);
 };
 
 const isFileExists = async (path) => {
