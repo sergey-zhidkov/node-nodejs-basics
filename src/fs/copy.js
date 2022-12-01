@@ -18,7 +18,7 @@ const copy = async () => {
     await fsPromises.mkdir(toPath);
     const files = await fsPromises.readdir(fromPath);
     for (const singleFile of files) {
-        fsPromises.copyFile(path.join(fromPath, singleFile), path.join(toPath, singleFile));
+        await fsPromises.copyFile(path.join(fromPath, singleFile), path.join(toPath, singleFile));
     }
 };
 
