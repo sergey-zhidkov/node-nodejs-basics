@@ -1,11 +1,9 @@
 import path from "path";
 import { release, version } from "os";
 import { createServer as createServerHttp } from "http";
-import output from "./files/c.mjs";
+import "./files/c.js";
 import { createRequire } from "module";
 import { fileURLToPath } from "url";
-
-output();
 
 const random = Math.random();
 
