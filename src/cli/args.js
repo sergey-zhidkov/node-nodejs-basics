@@ -13,7 +13,10 @@ const parseArgs = () => {
         }
     }
 
-    console.log(result.substring(0, result.length - 2));
+    if (result) {
+        result = result.substring(0, result.length - 2);
+    }
+    console.log(result);
 };
 
 parseArgs();
