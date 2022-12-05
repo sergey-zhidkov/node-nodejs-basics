@@ -3,7 +3,6 @@ import os from "os";
 
 const performCalculations = async () => {
     const cpuCount = os.cpus().length;
-    console.log(cpuCount);
     const initialN = 10;
 
     let returnedResults = 0;
